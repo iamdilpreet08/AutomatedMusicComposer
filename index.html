@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Automated Music Composer</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <!--GUITAR-->
+        <div class="instrument i1">
+            <button class="ibtn" onclick="loadGuitar()"><img src="icons/guitar.png"  alt="guitar" width="100%" height="100%"></button>
+            <div class="download-btn">
+                <a id="downloadGuitar" download="Guitar.mp3"><img src="icons/download.svg" class="icons" alt="download"></a>
+            </div>
+            <div class="refresh-btn">
+                <a onclick="loadGuitar()"><img src="icons/refresh.svg" class="icons" alt="refresh-tune"></a>
+            </div>
+        </div>
+        <div class="waveform w1" id="guitarwave">
+                
+        </div>
+
+        <!--DRUMS-->
+        <div class="instrument i2">
+                <button class="ibtn" onclick="loadDrum()"><img src="icons/drum.png"  alt="drum" width="100%" height="100%"></button>
+                <div class="download-btn">
+                    <a id="downloadDrums" download="Drums.mp3"><img src="icons/download.svg" class="icons" alt="download"></a>
+                </div>
+                <div class="refresh-btn">
+                    <a onclick="loadDrum()"><img src="icons/refresh.svg" class="icons" alt="refresh-tune"></a>
+                </div>
+        </div>
+            
+        <div class="waveform w2" id="drumwave">
+
+        </div>
+
+        <!--PIANO-->
+        <div class="instrument i3">
+                <button class="ibtn" onclick="loadPiano()"><img src="icons/piano.png"  alt="piano" width="100%" height="100%"></button>
+                <div class="download-btn">
+                    <a id="downloadPiano" download="Piano.mp3"><img src="icons/download.svg" class="icons" alt="download"></a>
+                </div>
+                <div class="refresh-btn">
+                    <a onclick="loadPiano()"><img src="icons/refresh.svg" class="icons" alt="refresh-tune"></a>
+                </div>
+        </div>
+
+        <div class="waveform w3" id="pianowave">
+
+        </div>
+
+        <!--SHAKER-->
+        <div class="instrument i4">
+                <button class="ibtn" onclick="loadShaker()"><img src="icons/shaker.png"  alt="shaker" width="100%" height="100%"></button>
+                <div class="download-btn">
+                    <a id="downloadShaker" download="Shaker.mp3"><img src="icons/download.svg" class="icons" alt="download"></a>
+                </div>
+                <div class="refresh-btn">
+                    <a onclick="loadShaker()"><img src="icons/refresh.svg" class="icons" alt="refresh-tune"></a>
+                </div>
+        </div>
+        <div class="waveform w4" id="shakerwave">
+
+        </div>
+    </div>
+
+   <!--PLAYER-->     
+   <div id="player">
+
+   </div>
+       
+   
+   
+        
+    
+</body>
+</html>

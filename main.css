@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: #707070;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(175, 1fr);
+    grid-template-rows: repeat(78,1fr);
+    width: 91.1458333%;
+    height: 72.2222222%;
+    margin: 3.90625% 4.42708333333%;
+}
+
+.instrument{
+    background: #222123;
+    grid-column: span 15;
+    grid-row: span 15;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 3px 3px 20px -5px rgba(0,0,0,0.75);
+}
+.i1{
+    grid-row-start: 1;
+    grid-row-end: 16;
+}
+
+.i2{
+    grid-row-start: 22;
+    grid-row-end: 37;
+}
+
+.i3{
+    grid-row-start: 43;
+    grid-row-end: 58;
+}
+
+.i4{
+    grid-row-start: 64;
+    grid-row-end: 79;
+}
+
+.waveform{
+    background : #222123;
+    grid-column: span 150;
+    grid-row: span 15;
+    grid-column-start: 26;
+    grid-column-end: 176;
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px -5px rgba(0,0,0,0.75);
+}
+
+.w1{
+    grid-row-start: 1;
+    grid-row-end: 16;
+}
+
+.w2{
+    grid-row-start: 22;
+    grid-row-end: 37;
+}
+
+.w3{
+    grid-row-start: 43;
+    grid-row-end: 58;
+}
+
+.w4{
+    grid-row-start: 64;
+    grid-row-end: 79;
+}
+
+.icons{
+    height: 50%;
+    margin: 16.6666666667% 33.3333333333%;
+}
+
+.download-btn{
+    box-sizing: border-box;
+    background: #C7C7C7;
+    width: 50%;
+    height: 33.3333333333%;
+    border: 1px solid #222123;
+    border-radius: 0px 0px 0px 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.refresh-btn{
+    box-sizing: border-box;
+    background: #C7C7C7;
+    width: 50%;
+    height: 33.3333333333%;
+    border: 1px solid #222123;
+    border-radius: 0px 0px 20px 0px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+.gradient-waveforms{
+    height: 66.6666666667%;
+    width: 90%;
+    margin: 1.66666666667% 5%;
+}
+
+.ibtn{
+    background: #222123;
+    height: 53.3333333333%;
+    width: 53.3333333333%;
+    margin: 6.66666666667% 23.3333333333%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+audio{
+    width: 100%;
+    background: #222123;
+}
+
+a:hover{
+    cursor: pointer;
+}
